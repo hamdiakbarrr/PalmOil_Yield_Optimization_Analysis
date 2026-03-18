@@ -58,8 +58,8 @@ jupyter notebook
 - ```data/``` → dataset 
 
 ## 🛠️ Tools & Libraries
+- Jupyter Notebook
 - Python
-- Jupyter
 - Numpy
 - Pandas
 - Scikit-learn
