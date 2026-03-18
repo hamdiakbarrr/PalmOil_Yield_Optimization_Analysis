@@ -45,7 +45,12 @@ The scatter plot shows a strong alignment between predicted and actual values, i
 - The model can be used as a baseline for further optimization or more advanced machine learning models
 
 ## 🚀 How to Run
-```git clone https://github.com/username/yield_prediction_model.git cd yield_prediction_model pip install -r requirements.txt jupyter notebook```
+```bash
+git clone https://github.com/username/yield_prediction_model.git
+cd yield_prediction_model
+pip install -r requirements.txt
+jupyter notebook
+```
 
 ## 📁 Project Structure
 - ```notebooks/``` → analysis & visualization  
