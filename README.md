@@ -1,5 +1,6 @@
 # 🌴 Palm Oil Yield Prediction Model
-##📌 Project Overview
+📌 Project Overview
+
 Python project for palm oil yield prediction and analysis. This project aims to predict palm oil yield (kg/ha) using a linear regression model based on plantation operational and environmental variables. The goal is to understand key factors influencing production and provide data-driven insights for better decision-making.
 
 ## 🎯 Objective
