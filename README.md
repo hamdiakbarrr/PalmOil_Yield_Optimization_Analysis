@@ -1,71 +1,44 @@
-# 🌴 Palm Oil Yield Prediction Model
-📌 Project Overview
+# 🌴 Palm Oil Yield Prediction & Land Clustering
 
-Python project for palm oil yield prediction and analysis. This project aims to predict palm oil yield (kg/ha) using a linear regression model based on plantation operational and environmental variables. The goal is to understand key factors influencing production and provide data-driven insights for better decision-making.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat-square&logo=python)
+![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange?style=flat-square&logo=jupyter)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Random%20Forest-brightgreen?style=flat-square)
 
-## 🎯 Objective
-- Predict yield per hectare using regression model
-- Identify key factors affecting production
-- Produktive and unproductive block clustering
-- Provide insights for plantation management
+## Deskripsi Proyek
+Proyek ini berfokus pada analisis data agronomi kelapa sawit dan pembangunan model *Machine Learning* untuk memprediksi hasil panen (*yield*). Selain prediksi, proyek ini juga mencakup analisis korelasi antar variabel iklim/agronomi dan pemetaan klaster lahan (blok) untuk mengidentifikasi area dengan performa terbaik.
 
-## 📊 Dataset
-The dataset contains plantation data with the following variables:
-- `umur_tanaman` → trees age
-- `populasi_ha` → number of trees per hectare  
-- `sex_ratio` → ratio of productive trees  
-- `curah_hujan` → rainfall    
-- `yield_kg_ha` → production per hectare (target)  
+## Objektif
+1. **Analisis Korelasi**: Memahami hubungan antara variabel operasional (seperti pupuk NPK, curah hujan, *sex ratio*) terhadap hasil panen.
+2. **Pemodelan Prediksi**: Membangun dan mengevaluasi model prediksi *yield* (kg/ha) menggunakan algoritma **Random Forest**.
+3. **Segmentasi Lahan**: Menerapkan teknik klastering dan visualisasi *Principal Component Analysis* (PCA) untuk mengelompokkan blok lahan berdasarkan karakteristik *yield* dan *sex ratio*.
 
-> Note: This repository uses sample data for demonstration purposes.
+## Dataset
+Data historis yang digunakan dalam proyek ini (`datasetKS2.csv`) mencakup fitur-fitur berikut:
+* `tanggal_panen`: Tanggal pencatatan panen.
+* `luas_ha`: Luas area blok (Hektar).
+* `umur_tanaman`: Umur tanaman kelapa sawit (Bulan).
+* `populasi_ha`: Kerapatan pokok per hektar (SPH).
+* `produksi`: Total produksi Tandan Buah Segar / TBS (Kg).
+* `pupuk_npk`: Dosis aplikasi pupuk NPK (Kg).
+* `curah_hujan`: Intensitas curah hujan (mm).
+* `sex_ratio`: Rasio bunga betina terhadap total bunga.
+* `yield_kg_ha`: Hasil panen per hektar (Target Variabel yang diekstrak dari produksi / luas area).
 
-## ⚙️ Methodology
-- Data Cleaning & Preprocessing
-- Exploratory Data Analysis (EDA)
-- Correlation Analysis
-- Linear Regression Model
-- Model Evaluation (MSE, R²)
-- K-Means Clustering
+## Metodologi
+1. **Data Preprocessing**: Pembersihan tipe data, pemformatan kolom waktu (`datetime`), dan rekayasa fitur (menghitung `yield_kg_ha`).
+2. **Exploratory Data Analysis (EDA)**: Visualisasi sebaran matriks korelasi untuk menemukan faktor paling dominan terhadap produktivitas.
+3. **Clustering & PCA**: Mengelompokkan blok lahan dan memvisualisasikan *Distribution of Land Clusters* untuk mengidentifikasi blok "Juara" di masing-masing klaster.
+4. **Machine Learning**: Pelatihan model *Random Forest Regressor* untuk memprediksi *yield* kelapa sawit secara presisi.
 
-## 📈 Model Performance
-- Mean Squared Error (MSE): 0.45
-- R² Score: 0.99
+## 🛠️ Teknologi & Library
+Proyek ini dibangun menggunakan ekosistem Data Science Python:
+* **Pengolahan Data**: `pandas`, `numpy`
+* **Visualisasi Data**: `matplotlib`, `seaborn`
+* **Machine Learning & Analisis**: `scikit-learn` (Random Forest, K-Means, PCA)
 
-The model demonstrates a very high level of accuracy, explaining approximately 99% of the variance in yield data.
+## Cara Menjalankan Proyek (Local Setup)
 
-## 📊 Visualization
-<img width="686" height="568" alt="Prediction vs Actual" src="https://github.com/user-attachments/assets/47bb6658-5e34-4ff4-8097-aa2c57c41043" />
-
-The scatter plot shows a strong alignment between predicted and actual values, indicating that the model performs very well with minimal prediction error.
-
-🧾 Key Insights
-- The model shows excellent predictive performance with very low error (MSE)
-- High R² (0.99) indicates strong relationship between input variables and yield
-- Variables such as sex ratio and plant population are likely major contributors to yield performance
-- The model can be used as a baseline for further optimization or more advanced machine learning models
-
-## 🚀 How to Run
-```bash
-git clone https://github.com/username/yield_prediction_model.git
-cd yield_prediction_model
-pip install -r requirements.txt
-jupyter notebook
-```
-
-## 📁 Project Structure
-- ```notebooks/``` → analysis & visualization  
-- ```scripts/``` → model training & evaluation  
-- ```data/``` → dataset 
-
-## 🛠️ Tools & Libraries
-- Jupyter Notebook
-- Python
-- Numpy
-- Pandas
-- Scikit-learn
-- Scipy
-- Statsmodels
-- Matplotlib / Seaborn
-
-## 👤 Author
-Hamdi Akbar Setiawan  
+1. Clone repositori ini ke dalam lokal mesin Anda:
+   ```bash
+   git clone [https://github.com/username_anda/palm-oil-yield-prediction.git](https://github.com/username_anda/palm-oil-yield-prediction.git)
+   cd palm-oil-yield-prediction
