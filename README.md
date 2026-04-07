@@ -1,4 +1,4 @@
-# 🌴 Palm Oil Yield Prediction & Land Clustering
+# Palm Oil Yield Prediction & Land Clustering
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat-square&logo=python)
 ![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange?style=flat-square&logo=jupyter)
@@ -30,7 +30,7 @@ Data historis yang digunakan dalam proyek ini (`datasetKS2.csv`) mencakup fitur-
 3. **Clustering & PCA**: Mengelompokkan blok lahan dan memvisualisasikan *Distribution of Land Clusters* untuk mengidentifikasi blok "Juara" di masing-masing klaster.
 4. **Machine Learning**: Pelatihan model *Random Forest Regressor* untuk memprediksi *yield* kelapa sawit secara presisi.
 
-## 🛠️ Teknologi & Library
+## Teknologi & Library
 Proyek ini dibangun menggunakan ekosistem Data Science Python:
 * **Pengolahan Data**: `pandas`, `numpy`
 * **Visualisasi Data**: `matplotlib`, `seaborn`
