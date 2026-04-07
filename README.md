@@ -40,5 +40,9 @@ Proyek ini dibangun menggunakan ekosistem Data Science Python:
 
 1. Clone repositori ini ke dalam lokal mesin Anda:
    ```bash
-   git clone [https://github.com/username_anda/palm-oil-yield-prediction.git](https://github.com/username_anda/palm-oil-yield-prediction.git)
-   cd palm-oil-yield-prediction
+   git clone [https://github.com/hamdiakbarrr/PalmOil_Yield_Optimization_Analysis.git](https://github.com/hamdiakbarrr/PalmOil_Yield_Optimization_Analysis.git)
+   cd PalmOil_Yield_Optimization_Analysis
+
+## Hasil Analisis & Insight
+1. Terdapat pemetaan klaster lahan yang membedakan kinerja tiap blok berdasarkan rasio seks dan hasil panen.
+2. Fitur Filtering Cluster Blocks pada notebook dapat digunakan secara praktis oleh manajemen kebun untuk memilah daftar blok lahan dalam klaster tertentu dan mengurutkannya berdasarkan yield tertinggi.
